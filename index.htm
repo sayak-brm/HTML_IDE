@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Rich HTML Editor
+    </title>
+    <script  src="h5ed.js"></script>
+    <link rel="stylesheet" href="h5ed.css">
+  </head>
+  <body lang="EN-US">
+    <h1>Rich HTML Editor</h1>
+    <br/>
+    <div>
+      <h2>Link to Page:</h2>
+      <div>
+        <input type="url" id="url" title="Use 'http://' in the beginning" placeholder="http://microcontrolled.do.am/">
+        <button onclick="openLink()">Go!
+        </button>
+        <br/>
+      </div>
+    </div>
+    <div>
+      <h2>Editable Content</h2>
+      <br/>
+      <div>
+        <iframe id="frame" src="http://microcontrolled.do.am/projects/h5ed/examplepage.htm" height="400px" width="800px">
+        </iframe>
+        <br/>
+        <button onclick="ifEdit()">Start Editing
+        </button>
+        <button onclick="ifStop()">Stop Editing
+        </button>
+        <br/>
+      </div>
+    </div>
+    <div>
+      <h2>Editable Code</h2>
+      <br/>
+      <div>
+        <div id="code" style="border: 1px solid; width: 800px; height: 400px; overflow:scroll;">
+        </div>
+        <br/>
+        <button onclick="divEdit()">Start Editing
+        </button>
+        <button onclick="divStop()">Stop Editing
+        </button>
+        <br/>
+      </div>
+    </div>
+    <div>
+      <a href="http://microcontrolled.do.am/"><b>Home</b></a> -
+      <a href="mailto:2kcodewriter@gmail.com">Contact Us</a>
+      <br/>
+    </div>
+    <small>Copyright Sayak Brahmachari(c)2013 - 2016.</small>
+    <br/>
+    <script>init();</script>
+  </body>
+</html>
